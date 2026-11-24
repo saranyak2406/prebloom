@@ -1,0 +1,26 @@
+{
+  "name": "prepbloom",
+  "version": "1.0.0",
+  "description": "PrepBloom 🌷 - Learn. Grow. Succeed. Comprehensive Indian Government Examination Preparation SaaS Platform",
+  "scripts": {
+    "start": "node server/src/index.js",
+    "server": "cd server && npm run dev",
+    "client": "cd client && npm run dev",
+    "build": "cd client && npm run build",
+    "seed": "cd server && npm run seed",
+    "test": "cd server && node test-all.js"
+  },
+  "keywords": [
+    "upsc",
+    "appsc",
+    "ssc",
+    "railways",
+    "ibps",
+    "sbi",
+    "government-exams",
+    "edtech",
+    "cbt-mock-tests"
+  ],
+  "author": "PrepBloom Team",
+  "license": "ISC"
+}

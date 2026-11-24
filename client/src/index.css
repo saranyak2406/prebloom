@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans text-slate-800 bg-[#fbfbfe] antialiased selection:bg-pink-100 selection:text-pink-600;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight text-slate-900;
+  }
+}
+
+/* Custom Soft Pastel Glows and Gradients */
+.bg-pastel-gradient {
+  background: linear-gradient(135deg, #f0fdf4 0%, #fdf2f8 50%, #f5f3ff 100%);
+}
+
+.bg-pastel-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.bg-bloom-mesh {
+  background-color: #fafafc;
+  background-image: 
+    radial-gradient(at 10% 10%, rgba(220, 252, 231, 0.6) 0px, transparent 50%),
+    radial-gradient(at 90% 15%, rgba(252, 231, 243, 0.6) 0px, transparent 50%),
+    radial-gradient(at 50% 90%, rgba(237, 233, 254, 0.6) 0px, transparent 50%);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #f8fafc;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Badge Glows */
+.badge-active {
+  @apply bg-emerald-50 text-emerald-700 border border-emerald-200;
+}
+.badge-upcoming {
+  @apply bg-amber-50 text-amber-700 border border-amber-200;
+}
+.badge-expired {
+  @apply bg-slate-100 text-slate-500 border border-slate-200;
+}
+
+/* Smooth Transitions */
+.card-hover {
+  @apply transition-all duration-300 hover:-translate-y-1 hover:shadow-soft;
+}
