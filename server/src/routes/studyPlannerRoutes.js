@@ -9,3 +9,4 @@ router.post('/toggle-task', verifyToken, studyPlannerController.toggleTaskStatus
 router.post('/generate-combined', verifyToken, studyPlannerController.generateCombinedPlan);
 
 module.exports = router;
+

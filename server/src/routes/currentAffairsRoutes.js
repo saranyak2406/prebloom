@@ -7,3 +7,4 @@ router.get('/', currentAffairsController.getCurrentAffairs);
 router.get('/:id', currentAffairsController.getCurrentAffairById);
 
 module.exports = router;
+

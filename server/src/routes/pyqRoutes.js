@@ -6,3 +6,4 @@ router.get('/', pyqController.getPYQPapers);
 router.get('/:id', pyqController.getPYQById);
 
 module.exports = router;
+

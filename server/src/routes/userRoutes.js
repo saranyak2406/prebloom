@@ -11,3 +11,4 @@ router.get('/notifications', verifyToken, userController.getNotifications);
 router.post('/notifications/:id/read', verifyToken, userController.markNotificationRead);
 
 module.exports = router;
+

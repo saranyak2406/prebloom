@@ -14,3 +14,4 @@ router.post('/current-affairs', adminController.createCurrentAffair);
 router.post('/notifications', adminController.postNotification);
 
 module.exports = router;
+

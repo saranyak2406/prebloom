@@ -10,3 +10,4 @@ router.post('/submit', verifyToken, mockTestController.submitMockTest);
 router.get('/attempt/:attemptId', verifyToken, mockTestController.getAttemptResults);
 
 module.exports = router;
+

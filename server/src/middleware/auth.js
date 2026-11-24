@@ -46,3 +46,4 @@ module.exports = {
   optionalAuth,
   JWT_SECRET
 };
+

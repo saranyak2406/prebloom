@@ -155,3 +155,4 @@ export default function Sidebar({ currentTab, onNavigate, isMobileOpen, setIsMob
     </>
   );
 }
+

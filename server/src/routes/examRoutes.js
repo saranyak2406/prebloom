@@ -12,3 +12,4 @@ router.post('/compare', examController.compareExams);
 router.get('/:slug', examController.getExamBySlug);
 
 module.exports = router;
+

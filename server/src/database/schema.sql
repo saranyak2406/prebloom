@@ -249,3 +249,4 @@ CREATE TABLE IF NOT EXISTS pyq_papers (
     content_json JSONB DEFAULT '[]'::jsonb,
     created_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
+

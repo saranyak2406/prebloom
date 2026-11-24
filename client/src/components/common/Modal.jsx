@@ -51,3 +51,4 @@ export default function Modal({ isOpen, onClose, title, subtitle, children, maxW
     </div>
   );
 }
+

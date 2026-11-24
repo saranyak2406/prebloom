@@ -7,3 +7,4 @@ router.get('/practice', quizController.getPracticeQuestions);
 router.post('/verify', optionalAuth, quizController.verifyAnswer);
 
 module.exports = router;
+

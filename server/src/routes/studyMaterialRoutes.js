@@ -11,3 +11,4 @@ router.get('/', studyMaterialController.getMaterials);
 router.post('/:id/download', studyMaterialController.incrementDownload);
 
 module.exports = router;
+

@@ -4,11 +4,12 @@
   "description": "PrepBloom 🌷 - Learn. Grow. Succeed. Comprehensive Indian Government Examination Preparation SaaS Platform",
   "scripts": {
     "start": "node server/src/index.js",
-    "server": "cd server && npm run dev",
-    "client": "cd client && npm run dev",
-    "build": "cd client && npm run build",
-    "seed": "cd server && npm run seed",
-    "test": "cd server && node test-all.js"
+    "server": "npm --prefix server run dev",
+    "client": "npm --prefix client run dev",
+    "postinstall": "cd client && npm install",
+    "build": "cd client && npm install && npm run build && cd .. && node copy-dist.js",
+    "seed": "node server/src/database/seed.js",
+    "test": "node server/test-all.js"
   },
   "keywords": [
     "upsc",
